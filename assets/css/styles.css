@@ -85,9 +85,38 @@ strong {
     transition: transform 0.5s ease;
 }
 
-.Cards:hover .car_cmp {
+#tarjeta_1:hover .car_cmp {
     transform: rotate(360deg);
 }
+
+#tarjeta_2:hover .car_cmp {
+    transform: rotate(360deg);
+}
+
+#tarjeta_3:hover .car_cmp {
+    transform: rotate(360deg);
+}
+
+#tarjeta_4:hover .car_cmp {
+    transform: rotate(360deg);
+}
+
+#tarjeta_5:hover .car_cmp {
+    transform: rotate(360deg);
+}
+
+#tarjeta_6:hover .car_cmp {
+    transform: rotate(360deg);
+}
+
+#tarjeta_7:hover .car_cmp {
+    transform: rotate(360deg);
+}
+
+#tarjeta_8:hover .car_cmp {
+    transform: rotate(360deg);
+}
+
 
 footer {
     display: flex;
