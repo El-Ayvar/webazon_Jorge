@@ -82,41 +82,40 @@ strong {
     left: 50%;
     width: 1.5rem;
     height: 1.5rem;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
 }
 
-#tarjeta_1:hover #carrito_1 {
+.Cards:hover #carrito_1{
     transform: rotate(360deg);
 }
 
-#tarjeta_2:hover #carrito_2 {
+.Cards:hover #carrito_2{
     transform: rotate(360deg);
 }
 
-#tarjeta_3:hover #carrito_3 {
+.Cards:hover #carrito_3{
     transform: rotate(360deg);
 }
 
-#tarjeta_4:hover #carrito_4 {
+.Cards:hover #carrito_4{
     transform: rotate(360deg);
 }
 
-#tarjeta_5:hover #carrito_5 {
+.Cards:hover #carrito_5{
     transform: rotate(360deg);
 }
 
-#tarjeta_6:hover #carrito_6 {
+.Cards:hover #carrito_6{
     transform: rotate(360deg);
 }
 
-#tarjeta_7:hover #carrito_7 {
+.Cards:hover #carrito_7{
     transform: rotate(360deg);
 }
 
-#tarjeta_8:hover #carrito_8 {
+.Cards:hover #carrito_8{
     transform: rotate(360deg);
 }
-
 
 footer {
     display: flex;
