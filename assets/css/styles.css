@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    background-color: rgb(17, 43, 60);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+h1:hover {
+    outline: 2px solid white;
+    cursor: pointer;
+}
+
+header img {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.Cards {
+    background-color: white;
+    margin: 1rem 0rem ;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.Cards:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1); 
+}
+
+.text_descuento {
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.red {
+    color: red;
+}
+
+.ver_mas {
+    color: blue;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.ver_mas:hover {
+    text-decoration: underline;
+}
+
+strong {
+    font-size: 1.8rem;
+}
+
+.car_cmp {
+    position: relative;
+    left: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 0.5s ease;
+}
+
+.Cards:hover .car_cmp {
+    transform: rotate(360deg);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    color: white;
+    background-color: rgb(17, 43, 60);
+    width: 100vw;
+}
