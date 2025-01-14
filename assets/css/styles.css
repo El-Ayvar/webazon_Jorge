@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     font-family: "Roboto";
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 header {
@@ -23,11 +24,16 @@ header {
     color: white;
     background-color: rgb(17, 43, 60);
     position: sticky;
-    top: 0px;
+    top: 0rem;
     z-index: 1;
 }
 
 h1:hover {
+    outline: 2px solid white;
+    cursor: pointer;
+}
+
+li:hover {
     outline: 2px solid white;
     cursor: pointer;
 }
@@ -80,60 +86,55 @@ strong {
 
 .car_cmp {
     position: relative;
-    left: 50%;
+    left: 45%;
     width: 1.5rem;
     height: 1.5rem;
     transition: transform 0.3s ease;
 }
 
-.Cards:hover #carrito_1{
-    transform: rotate(360deg);
-}
-
-.Cards:hover #carrito_2{
-    transform: rotate(360deg);
-}
-
-.Cards:hover #carrito_3{
-    transform: rotate(360deg);
-}
-
-.Cards:hover #carrito_4{
-    transform: rotate(360deg);
-}
-
-.Cards:hover #carrito_5{
-    transform: rotate(360deg);
-}
-
-.Cards:hover #carrito_6{
-    transform: rotate(360deg);
-}
-
-.Cards:hover #carrito_7{
-    transform: rotate(360deg);
-}
-
-.Cards:hover #carrito_8{
+.Cards:hover .car_cmp{
     transform: rotate(360deg);
 }
 
 footer {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    align-items: center;
     color: white;
     background-color: rgb(17, 43, 60);
     width: 100vw;
 }
 
+#gif {
+    width: 3vw;
+    position: relative;
+    left: 45%;
+    animation: fantasma 15s infinite; /* Aplica la animación */
+}
+
+@keyframes fantasma {
+    0% { opacity: 100% }
+    25% { transform: translateX(-40vw); opacity: 100% }
+    100% { opacity: 100% }
+}
+
+
 #not_smartphone {
+    display: none;
+}
+
+#nav_bar {
+    display: none;
+}
+
+#img_desktop {
     display: none;
 }
 
 @media (min-width: 481px) {
     header {
         justify-content: space-around;
+        margin-bottom: 1rem;
     }
 
     header img {
@@ -144,7 +145,7 @@ footer {
         padding: 0.3rem; /* Ajusta la altura como prefieras */ 
         font-size: 2vw; /* Tamaño de fuente para el texto dentro del cuadro */
     }
-    ul {
+    header ul {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -162,14 +163,14 @@ footer {
         display: flex;
         flex-direction: row;
     }
-    li {
+    header li {
         width: 18vw;
         font-size: 1.7vw;
     }
-    li:nth-child(1){
+    header li:nth-child(1){
         width: 14vw;
     }
-    li:nth-child(3){
+    header li:nth-child(3){
         width: 7vw;
     }
     h1 {
@@ -179,7 +180,7 @@ footer {
     .box_tablet {
         width: 95vw;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .img_perfil {
@@ -187,34 +188,10 @@ footer {
         height: 37.4vh;
     }
 
-    #tarjeta_1 {
-        width: 43vw;
-    }
-    #tarjeta_2 {
-        width: 43vw;
-    }
-    #tarjeta_3 {
-        width: 43vw;
-    }
-    #tarjeta_4 {
-        width: 43vw;
-    }
-    #tarjeta_5 {
-        width: 43vw;
-    }
-    #tarjeta_6 {
-        width: 43vw;
-    }
-    #tarjeta_7 {
-        width: 43vw;
-    }
-    #tarjeta_8 {
-        width: 43vw;
-    }
-
     .Cards {
         margin: 0.3rem 0rem;
         justify-content: space-between;
+        width: 43vw;
     }
 
     .text_descuento {
@@ -225,6 +202,87 @@ footer {
     }
     .ver_mas {
         font-size: 0.7rem;
+    }
+    footer {
+        margin-top: 1rem;
+    }
+
+}
+
+@media (min-width: 769px) {
+    header {
+        margin: 0rem;
+    }
+    #nav_bar {
+        display: flex;
+        width: 100vw;
+        padding: 0.7rem;
+        background-color: rgb(26, 25, 25);
+        position: sticky;
+        top: 3.9rem;
+        z-index: 2;
+    }
+    #nav_bar ul {
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        color: white;
+        font-size: 0.6rem;
+    }
+    #img_desktop {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+    #img_desktop img{
+        width: 90vw;
+    }
+    .box_desktop {
+        width: 80vw;
+        margin-bottom: 1rem;
+        display: flex;
+    }
+    .box_tablet {
+        width: 40vw;
+    }
+    .Cards {
+        width: 18vw;
+    }
+
+    .img_perfil {
+        width: 15vw;
+        height: 24vh;
+        margin-bottom: 0.7rem;
+    }
+    strong {
+        font-size: 0.8rem;
+    }
+    .red {
+        font-size: 0.8rem;
+    }
+    .ver_mas {
+        font-size: 0.6rem;
+    }
+    #box_text { 
+        width: 50vw; /* Ajusta el ancho como prefieras */ 
+        padding: 0.3rem; /* Ajusta la altura como prefieras */ 
+        font-size: 1vw; /* Tamaño de fuente para el texto dentro del cuadro */
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header ul {
+        justify-content: space-between;
+        width: 30vw;
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+    header li {
+        font-size: 0.8rem;
+        width: rem;
+    }
+    #not_smartphone {
+        justify-content: space-around;
     }
 
 }
