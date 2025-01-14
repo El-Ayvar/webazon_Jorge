@@ -1,58 +1,58 @@
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 body {
+    align-items: center;
     background-color: rgb(224, 221, 221);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     font-family: "Roboto";
     font-size: 16px;
+    justify-content: center;
     overflow-x: hidden;
 }
 
 header {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    color: white;
     background-color: rgb(17, 43, 60);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 1rem;
     position: sticky;
     top: 0rem;
+    width: 100vw;
     z-index: 1;
 }
 
 h1:hover {
-    outline: 2px solid white;
     cursor: pointer;
+    outline: 2px solid white;
 }
 
 li:hover {
-    outline: 2px solid white;
     cursor: pointer;
+    outline: 2px solid white;
 }
 
 header img {
-    width: 2rem;
-    height: 2rem;
     cursor: pointer;
+    height: 2rem;
+    width: 2rem;
 }
 
 .Cards {
     background-color: white;
-    margin: 1rem 0rem ;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    width: 95vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem ;
+    padding: 1rem;
+    width: 95vw;
 }
 
 .Cards:hover {
@@ -60,10 +60,10 @@ header img {
 }
 
 .text_descuento {
-    font-size: 1.5rem;
-    margin: 1rem 0rem;
     display: flex;
+    font-size: 1.5rem;
     justify-content: space-between;
+    margin: 1rem 0rem;
 }
 
 .red {
@@ -71,8 +71,8 @@ header img {
 }
 
 .ver_mas {
-    color: blue;
     font-size: 1rem;
+    color: blue;
     cursor: pointer;
 }
 
@@ -85,11 +85,11 @@ strong {
 }
 
 .car_cmp {
-    position: relative;
     left: 45%;
-    width: 1.5rem;
-    height: 1.5rem;
+    position: relative;
     transition: transform 0.3s ease;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .Cards:hover .car_cmp{
@@ -97,19 +97,19 @@ strong {
 }
 
 footer {
+    align-items: center;
+    background-color: rgb(17, 43, 60);
+    color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: rgb(17, 43, 60);
     width: 100vw;
 }
 
 #gif {
-    width: 3vw;
+    animation: fantasma 15s infinite; 
     position: relative;
     left: 45%;
-    animation: fantasma 15s infinite; /* Aplica la animación */
+    width: 3vw;
 }
 
 @keyframes fantasma {
@@ -141,13 +141,13 @@ footer {
         display: none;
     }
     #box_text { 
-        width: 30vw; /* Ajusta el ancho como prefieras */ 
-        padding: 0.3rem; /* Ajusta la altura como prefieras */ 
-        font-size: 2vw; /* Tamaño de fuente para el texto dentro del cuadro */
+        font-size: 2vw; 
+        padding: 0.3rem; 
+        width: 30vw; 
     }
     header ul {
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: space-evenly;
         list-style-type: none;
         width: 45vw;
@@ -160,12 +160,12 @@ footer {
         width: 95vw;
     }
     header ul{
-        display: flex;
         flex-direction: row;
+        display: flex;
     }
     header li {
-        width: 18vw;
         font-size: 1.7vw;
+        width: 18vw;
     }
     header li:nth-child(1){
         width: 14vw;
@@ -178,19 +178,19 @@ footer {
         margin-right: 1rem;
     }
     .box_tablet {
-        width: 95vw;
         display: flex;
         justify-content: space-around;
+        width: 95vw;
     }
 
     .img_perfil {
+        height: 39vh;
         width: 37.5vw;
-        height: 37.4vh;
     }
 
     .Cards {
-        margin: 0.3rem 0rem;
         justify-content: space-between;
+        margin: 0.3rem 0rem;
         width: 43vw;
     }
 
@@ -215,20 +215,20 @@ footer {
     }
     #nav_bar {
         display: flex;
-        width: 100vw;
-        padding: 0.7rem;
         background-color: rgb(26, 25, 25);
+        padding: 0.7rem;
         position: sticky;
         top: 3.9rem;
+        width: 100vw;
         z-index: 2;
     }
     #nav_bar ul {
-        width: 100vw;
+        color: white;
         display: flex;
+        font-size: 0.6rem;
         justify-content: space-evenly;
         list-style-type: none;
-        color: white;
-        font-size: 0.6rem;
+        width: 100vw;
     }
     #img_desktop {
         display: flex;
@@ -238,9 +238,9 @@ footer {
         width: 90vw;
     }
     .box_desktop {
-        width: 80vw;
-        margin-bottom: 1rem;
         display: flex;
+        margin-bottom: 1rem;
+        width: 80vw;
     }
     .box_tablet {
         width: 40vw;
@@ -250,9 +250,9 @@ footer {
     }
 
     .img_perfil {
-        width: 15vw;
-        height: 24vh;
         margin-bottom: 0.7rem;
+        height: 22vh;
+        width: 15vw;
     }
     strong {
         font-size: 0.8rem;
@@ -264,25 +264,32 @@ footer {
         font-size: 0.6rem;
     }
     #box_text { 
-        width: 50vw; /* Ajusta el ancho como prefieras */ 
-        padding: 0.3rem; /* Ajusta la altura como prefieras */ 
-        font-size: 1vw; /* Tamaño de fuente para el texto dentro del cuadro */
+        font-size: 1vw;
+        padding: 0.3rem;
+        width: 50vw; 
     }
     header h1 {
         font-size: 2rem;
     }
     header ul {
-        justify-content: space-between;
-        width: 30vw;
         font-size: 1rem;
+        justify-content: space-between;
         margin-left: 0.5rem;
+        width: 25vw;
     }
     header li {
         font-size: 0.8rem;
-        width: rem;
+        width: 10vw;
+    }
+    header li:nth-child(1){
+        width: 8vw;
+    }
+    header li:nth-child(3){
+        width: 3vw;
     }
     #not_smartphone {
         justify-content: space-around;
+        padding: 0rem;
     }
 
 }
