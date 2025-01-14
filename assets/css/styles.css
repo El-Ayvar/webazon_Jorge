@@ -46,6 +46,7 @@ header img {
     flex-direction: column;
     width: 95vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 3%;
 }
 
 .Cards:hover {
@@ -124,4 +125,106 @@ footer {
     color: white;
     background-color: rgb(17, 43, 60);
     width: 100vw;
+}
+
+#not_smartphone {
+    display: none;
+}
+
+@media (min-width: 481px) {
+    header {
+        justify-content: space-around;
+    }
+
+    header img {
+        display: none;
+    }
+    #box_text { 
+        width: 30vw; /* Ajusta el ancho como prefieras */ 
+        padding: 0.3rem; /* Ajusta la altura como prefieras */ 
+        font-size: 2vw; /* Tamaño de fuente para el texto dentro del cuadro */
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+        width: 45vw;
+    }
+
+    #not_smartphone {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left:2rem;
+        width: 95vw;
+    }
+    header ul{
+        display: flex;
+        flex-direction: row;
+    }
+    li {
+        width: 18vw;
+        font-size: 1.7vw;
+    }
+    li:nth-child(1){
+        width: 14vw;
+    }
+    li:nth-child(3){
+        width: 7vw;
+    }
+    h1 {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    .box_tablet {
+        width: 95vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .img_perfil {
+        width: 37.5vw;
+        height: 37.4vh;
+    }
+
+    #tarjeta_1 {
+        width: 43vw;
+    }
+    #tarjeta_2 {
+        width: 43vw;
+    }
+    #tarjeta_3 {
+        width: 43vw;
+    }
+    #tarjeta_4 {
+        width: 43vw;
+    }
+    #tarjeta_5 {
+        width: 43vw;
+    }
+    #tarjeta_6 {
+        width: 43vw;
+    }
+    #tarjeta_7 {
+        width: 43vw;
+    }
+    #tarjeta_8 {
+        width: 43vw;
+    }
+
+    .Cards {
+        margin: 0.3rem 0rem;
+        justify-content: space-between;
+    }
+
+    .text_descuento {
+        font-size: 0.8rem
+    }
+    strong {
+        font-size: 1rem
+    }
+    .ver_mas {
+        font-size: 0.7rem;
+    }
+
 }
