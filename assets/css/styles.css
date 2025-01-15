@@ -89,8 +89,8 @@ strong {
     left: 45%;
     position: relative;
     transition: transform 0.3s ease;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2.5vw;
+    width: 2.5vw;
 }
 
 .Cards:hover .car_cmp{
@@ -109,13 +109,13 @@ footer {
 #gif {
     animation: fantasma 15s infinite; 
     position: relative;
-    left: 45%;
+    left: 35%;
     width: 3vw;
 }
 
 @keyframes fantasma {
     0% { opacity: 100% }
-    25% { transform: translateX(-40vw); opacity: 100% }
+    25% { transform: translateX(-35vw); opacity: 100% }
     100% { opacity: 100% }
 }
 
@@ -157,7 +157,7 @@ footer {
     #not_smartphone {
         display: flex;
         justify-content: space-evenly;
-        padding-left:2rem;
+        padding-left:2vw;
         width: 95vw;
     }
     header ul{
@@ -226,7 +226,7 @@ footer {
     #nav_bar ul {
         color: white;
         display: flex;
-        font-size: 0.6rem;
+        font-size: 1vw;
         justify-content: space-evenly;
         list-style-type: none;
         width: 100vw;
@@ -256,13 +256,13 @@ footer {
         width: 15vw;
     }
     strong {
-        font-size: 0.8rem;
+        font-size: 1.1vw;
     }
     .red {
-        font-size: 0.8rem;
+        font-size: 1.1vw;
     }
     .ver_mas {
-        font-size: 0.6rem;
+        font-size: 0.9vw;
     }
     #box_text { 
         font-size: 1vw;
@@ -273,17 +273,16 @@ footer {
         font-size: 2rem;
     }
     header ul {
-        font-size: 1rem;
         justify-content: space-between;
         margin-left: 0.5rem;
-        width: 25vw;
+        width: 23vw;
     }
     header li {
-        font-size: 0.8rem;
-        width: 10vw;
+        font-size: 0.9vw;
+        width: 9.2vw;
     }
     header li:nth-child(1){
-        width: 8vw;
+        width: 7.2vw;
     }
     header li:nth-child(3){
         width: 3vw;
@@ -292,5 +291,4 @@ footer {
         justify-content: space-around;
         padding: 0rem;
     }
-
 }
