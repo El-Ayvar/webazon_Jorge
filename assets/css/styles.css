@@ -109,13 +109,13 @@ footer {
 #gif {
     animation: fantasma 15s infinite; 
     position: relative;
-    left: 35%;
+    left: 44vw;
     width: 3vw;
 }
 
 @keyframes fantasma {
     0% { opacity: 100% }
-    25% { transform: translateX(-35vw); opacity: 100% }
+    25% { transform: translateX(-44vw); opacity: 100% }
     100% { opacity: 100% }
 }
 
